@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Rating state start -->
+
+  <section class="rating">
+    <figure class="rating_star"> <!-- FIGURE es lo mismo que un div -->
+      <img src="./images/icon-star.svg" alt="estrella" width="23" height="23">
+      <!-- podemos hacer crecer a las imagenes -->
+    </figure>
+
+    <h2 class="rating_title">How did we do?</h2>
+
+    <p class="rating_description">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <div class="rating_circulos">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span class="rating_circulo4">4</span>
+      <span>5</span>
+    </div>
+    <!-- truco -> si colocamos este comando "span*5>{$}" esto hará que se cree 5 span con un numero del 1 al 5 -->
+    <button class="button_clase">Submit</button>
+
+  </section>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section class="rating text_center">
+    <img src="./images/illustration-thank-you.svg" alt="Illustration">
+    <div>You selected 4 out of 5</div>
+
+    <h2>Thank you!</h2>
+
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </section>
+
+  <!-- Thank you state end -->
+
+
+</body>
+
+</html>

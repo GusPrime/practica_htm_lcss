@@ -1,0 +1,117 @@
+/* ## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.rating{
+    background-color:hsl(213, 19%, 18%) ;
+    /* border: 1px solid red; */
+    width: 420px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 45px;
+    border-radius: 35px;
+    margin-top: 45px;
+}
+
+.rating_star{
+    width: 45px;
+    height: 45px;
+    /* border: 1px solid red; */
+    padding: 0;
+    border-radius: 50px;
+    background-color:hsl(216, 12%, 54%, 0.2) ;
+    /* Al final de los valores de los colores, separado por una COMA, colocamos unos valores del 0.1, 0.2, 0.3, etc. hasta 1, estos valores son para la transparencia */
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Truco para centrar lo que sea */
+}
+
+.rating_title{
+    font-size: 30px ;
+    font-weight: 700;
+    /* padding-top: 20px;
+    padding-bottom: 5px; */
+}
+
+.rating_description{
+    margin-bottom:15px ;
+    color: hsl(217, 12%, 63%,0.8);
+}
+
+.rating_circulos{
+    display: flex;
+    justify-content: space-between; /* -> separar elementos acorde al ancho del cuadro] */
+    align-items: center;
+    /* gap:35px; */
+}
+
+
+.rating_circulos span{
+    /* border: solid red; */
+    /* display: inline-block; */
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 54%, 0.15);
+}
+
+.rating_circulos span:hover{
+    background-color: orange;
+}
+
+.rating_circulos span:active{
+    background-color: hsl(216, 12%, 54%);
+}
+
+.button_clase{
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    margin-top: 30px;
+    text-transform: uppercase; /* ->cambiar las letras a mayusculas */
+}
+
+.button_clase:hover{
+    color: orange;
+    background-color: hsl(217, 12%, 63%);
+}
+
+/* en lugar de hover, tambien puede ser un active */
+
+.text_center{
+    text-align: center;
+}
+/* podemos vincular multiples clases a un elemento, por ejemplo: section class="rating text_center" -> estamos
+vinculando dos clases a un solo elemento */
+
